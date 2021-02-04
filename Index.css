@@ -1,0 +1,21 @@
+.card {
+  display: grid;
+  grid-template-columns: 0.6fr 1.4fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); 
+  grid-template-areas:
+    "picture identity"
+    "editoropinion editoropinion";
+}
+
+.picture { grid-area: picture; }
+
+.identity { grid-area: identity; }
+
+.editoropinion { grid-area: editoropinion; }
+
+img{
+    max-width: 150px;
+    max-height: 150px;
+}
