@@ -3,16 +3,14 @@ font-size: large;
 }
 .cards {
   display: grid;
-  grid-template-columns: 1fr 480px 1fr;
-  grid-template-rows: auto;
-  gap: 0px 0px;
-  grid-template-areas:
-    "left card right"  ;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .card { 
-  /* grid-area: card;*/
   display: grid;
+  max-width:450px;
   grid-template-columns: 0.6fr 1.4fr;
   box-shadow: 5px 2px 2px 1px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
@@ -22,11 +20,6 @@ font-size: large;
     "picture identity";
     border: 1px solid #1232;
  }
-
-.left { grid-area: left; }
-
-.right { grid-area: right; }
-
 
 .picture {
   grid-area: picture;
@@ -38,10 +31,6 @@ font-size: large;
   padding: 2px;
 }
 
-.editoropinion {
-  grid-area: editoropinion;
-  margin : 5px;
-}
 
 img {
   max-width: 150px;
@@ -50,10 +39,12 @@ img {
 }
 .choices {
   display: grid;
-  max-width: 500px;
+  max-width: 450px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto 50px;
+  grid-template-rows: 100px;
   gap: 0px 0px;
+  margin-right: 40px;
+  margin-top: 40px;
   grid-template-areas:
     "Hair Stomach Plastic Fat Dent";
 }
