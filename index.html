@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="bulma.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.rtl.min.css" integrity="sha384-mUkCBeyHPdg0tqB6JDd+65Gpw5h/l8DKcCTV2D2UpaMMFd7Jo8A+mDAosaWgFBPl" crossorigin="anonymous">
     <link rel="stylesheet" href="Index.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Scheherazade:wght@700&display=swap" rel="stylesheet">
     <title>Title</title>
 </head>
@@ -14,13 +15,12 @@
 <body>
 
     <div class="cards">
-        <div class="choices">
-            <div><img src="plastic/png/017-hair transplant.png" class="Hair image is-64x64"></div>
-            <div><img src="plastic/png/031-liposuction.png" class="Fat image is-64x64"></div>
-            <div><img src="plastic/png/049-plastic surgery.png" class="Plastic image is-64x64"></div>
-            <div><img src="plastic/png/045-abdominoplasty.png" class="Dent image is-64x64"></div>
-            <div><img src="plastic/png/017-hair transplant.png" class="Stomach image is-64x64"></div>
-        </div>
+      <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+        <option selected>عما تبحثون؟</option>
+        <option value="1">جراحة تجميلية</option>
+        <option value="2">زراعة شعر</option>
+        <option value="3">جراحة المعدة</option>
+      </select>
         <div class="card">
             <div class="picture">
                 <img src="avatars/1.jpg">
